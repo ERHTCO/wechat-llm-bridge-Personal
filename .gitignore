@@ -1,0 +1,24 @@
+# 运行时数据：聊天记录、图片、日志、凭据，都不进版本库
+.venv/
+__pycache__/
+*.pyc
+
+data/
+images/
+tmp/
+dist/
+build/
+*.log
+*.jsonl
+*.png
+.ui.lock
+.watch.lock
+
+# 你自己的配置和提示词（样例是 config.example.json / prompt.example.txt）
+config.json
+config.json.tmp
+prompt.txt
+watch_uia_log.txt
+watch.out.log
+bridge.log
+crash.log

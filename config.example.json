@@ -1,0 +1,96 @@
+{
+  "port": 8765,
+  "backend": "api",
+  "api_model": "deepseek-reasoner",
+  "api_base": "https://api.deepseek.com",
+  "dsh_patch": "",
+  "watch_target": "",
+  "main_targets": [],
+  "watch_targets": [],
+  "self_targets": [],
+  "private_all": true,
+  "proactive": {
+    "enabled": false,
+    "mode": "decision",
+    "targets": [],
+    "daily_max": 2,
+    "window": [
+      "09:00",
+      "23:00"
+    ],
+    "daily_at": "",
+    "idle_hours": 6,
+    "min_gap_min": 30,
+    "quiet_min": 20,
+    "heartbeat_min": 90,
+    "silent_backoff_min": 45,
+    "silent_backoff_max_min": 240,
+    "decide_model": "deepseek-chat",
+    "template": "",
+    "hint": ""
+  },
+  "persona": "",
+  "my_name": "我",
+  "whitelist": [],
+  "rooms": {},
+  "rate_limit": {
+    "min_interval_s": 3,
+    "max_per_minute": 6
+  },
+  "dedupe_window_s": 20,
+  "context_turns": 16,
+  "reply_timeout_s": 120,
+  "triggers": [
+    "落星河",
+    "星河"
+  ],
+  "vision": {
+    "enable_words": [
+      "识图",
+      "开启识图",
+      "识图一下",
+      "看看这张图"
+    ],
+    "max_images": 1,
+    "ttl_seconds": 30,
+    "ask_reply": "好的，我正在等图片，请发过来就行。"
+  },
+  "kaomoji": false,
+  "at_window": 20,
+  "api_model_vision": "deepseek-chat",
+  "api_token": "",
+  "search": {
+    "enabled": true,
+    "private_only": true,
+    "count": 3,
+    "timeout": 4.0,
+    "max_per_hour": 30
+  },
+  "api_key": "",
+  "rhythm": {
+    "enabled": true,
+    "min_interval": [
+      2.5,
+      6.0
+    ],
+    "burst": 7,
+    "burst_window": 120.0,
+    "cooldown": [
+      30.0,
+      75.0
+    ]
+  },
+  "vault": "",
+  "vault_daily_hour": 23,
+  "vault_summary": true,
+  "vault_summary_model": "deepseek-reasoner",
+  "memory": {
+    "enabled": true,
+    "every_turns": 6,
+    "top_k": 5,
+    "max_chars": 1200,
+    "model": "deepseek-chat",
+    "decay_rate": 0.01,
+    "min_score": 0.12
+  }
+}
