@@ -1,7 +1,9 @@
-# wx-bridge
+# wechat-llm-bridge
 
-微信 PC 端的自动化桥：用 Windows UI Automation 读独立聊天窗口，交给模型生成回复，
+把微信 PC 端接上大模型：用 Windows UI Automation 读独立聊天窗口，交给模型生成回复，
 再走同一条 UIA 路径发出去。附带 B 站订阅/收藏、长期记忆、Obsidian 日记、桌面控制台和运行统计。
+
+一句话：**不用破解协议、不注入客户端，让机器人像人一样在微信里收发消息。**
 
 不注入微信进程，不改客户端，也不依赖 wxauto —— 控件树是自己读的。
 

@@ -10,7 +10,7 @@
 | `AstrBotDevs/AstrBot` | GNU Affero General Public License v3.0 | `AGPL-3.0` |
 | `lxfight-s-Astrbot-Plugins/astrbot_plugin_livingmemory` | GNU Affero General Public License v3.0 | `AGPL-3.0` |
 
-**这决定了边界。** AGPL-3.0 有传染性：把它们的代码并进 `wx-bridge`，`wx-bridge`
+**这决定了边界。** AGPL-3.0 有传染性：把它们的代码并进 `本项目`，`本项目`
 整体就得按 AGPL 发布；而且 AGPL 第 13 条对**网络服务**也要求向使用者提供源码。
 所以：
 
@@ -26,7 +26,7 @@
 AstrBot 的插件靠钩子插进对话流程。我们只有两个介入点，但**这两个点是我们自己
 的代码**，不用求人：
 
-| AstrBot | 作用 | wx-bridge 对应 |
+| AstrBot | 作用 | 本项目 对应 |
 |---|---|---|
 | `on_llm_request` | 请求前注入（LivingMemory 往 `extra_user_content` 塞记忆） | `hooks` 的 `before_reply`，返回值合并进 `backends.Context` |
 | `on_llm_response` | 回复后写回（写助手消息、攒够轮次触发总结） | `hooks` 的 `after_reply`，只读，不参与回复 |
